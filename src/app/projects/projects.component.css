@@ -1,0 +1,9 @@
+.content-projects{
+    margin-top: 100px;
+    margin-inline: 20%;
+}
+@media (max-width: 768px) {
+    .content-projects{
+        margin-inline: 5%;
+    }
+  }

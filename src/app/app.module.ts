@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     AppComponent,
     MenuComponent,
     WelcomeComponent,
-    SkillsComponent,
+    ProjectsComponent,
     AboutmeComponent
   ],
   imports: [

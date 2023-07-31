@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   {path:'',component:WelcomeComponent},
-  {path:'skills',component:SkillsComponent},
+  {path:'skills',component:ProjectsComponent},
   {path:'aboutme',component:AboutmeComponent},
 
   {path:'**',redirectTo:''},

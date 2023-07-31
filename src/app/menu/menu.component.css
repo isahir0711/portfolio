@@ -170,8 +170,7 @@ a {
     top: 50px;
     transition: 0.2s;
     width: 100vw;
-    background: transparent;
-    backdrop-filter: blur(60px);
+    background: var(--welcome-background);
   }
 
   .navlinks>.links {

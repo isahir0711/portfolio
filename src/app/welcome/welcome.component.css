@@ -1,35 +1,41 @@
-.welcome{
+.welcome {
     background: var(--welcome-background);
     padding: 80px 0 80px 0;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1.2rem;
-    margin-inline:20%;
+    margin-inline: 20%;
 }
 
-.content{
-    flex-basis: 900px;
+.content {
+    flex-basis: 700px;
 }
 
-.social-links{
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
     display: flex;
     margin-top: 25px;
     gap: 5px;
 }
 
-.social-link{
+.social-link {
     text-align: center;
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
 }
 
-.social-icon{
+.social-icon {
     width: 40px;
 }
 
@@ -44,73 +50,74 @@
     line-height: 25px;
 }
 
-.skills-title{
+.skills-title {
     width: 100%;
 }
 
-.icons-container{
+.icons-container {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.icon-container{
+.icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.icon{
+
+.icon {
     width: 70px;
 }
 
-.experience-card{
+.experience-card {
     width: 70%;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
     background: var(--welcome-background);
-    border:2px solid var(--card-border);
+    border: 2px solid var(--card-border);
 }
 
 
-.footer-link:hover{
+.footer-link:hover {
     transform: scale(1.2);
     color: var(--text-hover);
 }
 
-.experience-card-title{
+.experience-card-title {
     margin-top: 10px;
 }
 
-.aboutme{
+.aboutme {
     display: flex;
     flex-direction: column;
 }
 
-.tech-used{
+.tech-used {
     gap: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.card-footer{
+.card-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-link{
+.footer-link {
     font-size: 1.3rem;
     text-decoration: none;
     transition: 0.2s;
 }
 
-.tech-used > .icon{
+.tech-used>.icon {
     width: 30px;
 }
 
@@ -118,15 +125,22 @@
 
 @media (max-width: 768px) {
     .skills-container {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        margin-inline: 5%; /* Ajusta el margen lateral para que se vea bien en dispositivos más pequeños */
-    }
-    .container{
-        margin-inline:5%;
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna */
+        margin-inline: 5%;
+        /* Ajusta el margen lateral para que se vea bien en dispositivos más pequeños */
     }
 
-    .experience-card{
+    .container {
+        margin-inline: 5%;
+    }
+
+    .experience-card {
         width: 90%;
         align-self: center;
+    }
+
+    .container {
+        justify-content: center;
     }
 }
