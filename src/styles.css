@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: var(--background-body);
+    font-family: 'Inconsolata', monospace;
+    color: var(--font-color);
+}
+
+/* Define las variables CSS para los temas */
+:root {
+    --background-body: #ffffff;
+    --nav-bar:#ffffff;
+    --welcome-background:#f1f7ff;
+    --welcome-fontcolor:#444343;
+    --button-background:#ffffff;
+    --card-border:#c5c3c3;
+    --text-hover:#444343;
+    /* Valores predeterminados para el tema claro */
+}
+
+.theme-dark {
+    --background-body: #111827;
+    --font-color:#FAF3F0;
+    --nav-bar:#111f30;
+    --welcome-background:#15273d;
+    --welcome-fontcolor:#c5c3c3;
+    --button-background:#111827;
+    --card-border:#444343;
+    --text-hover:#c5c3c3;
+    /* Variables personalizadas para el tema oscuro */
+}
+
+
+/*colors*/
+.content>p{
+    color: var(--welcome-fontcolor);
+}
+
+a{
+    color: var(--font-color);
+}
+
+.social-link{
+    color: var(--font-color);
+    background: var(--button-background);
+}
+
+.aboutme >p{
+    color: var(--welcome-fontcolor);
+}

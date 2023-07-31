@@ -1,0 +1,9 @@
+.content-aboutme{
+    margin-top: 100px;
+    margin-inline: 20%;
+}
+@media (max-width: 768px) {
+    .content-aboutme{
+        margin-inline: 5%;
+    }
+  }
