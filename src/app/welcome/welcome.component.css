@@ -5,34 +5,63 @@
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     font-size: 1.2rem;
     margin-inline: 20%;
+    gap: 25px;
 }
 
-.content {
-    flex-basis: 700px;
+.content{
+    max-width: 800px;
 }
 
-.img-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img-me{
+    width: 180px;
+    border-radius: 40% 60% 55% 45% / 30% 30% 70% 70% ;
+    animation-name: blobanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
 }
+
+@keyframes blobanimation{
+    0%{
+        border-radius: 40% 60% 31% 69% / 50% 30% 70% 50% ;
+    }
+
+    25%{
+        border-radius: 82% 18% 42% 58% / 50% 42% 58% 50% ;
+    }
+
+    50%{
+        border-radius: 51% 49% 65% 35% / 35% 96% 4% 65% ;
+    }
+
+    75%{
+        border-radius: 51% 49% 65% 35% / 66% 56% 44% 34% ;
+    }
+
+    100%{
+        border-radius: 40% 60% 31% 69% / 50% 30% 70% 50% ;
+    }
+}
+
 
 .social-links {
     display: flex;
     margin-top: 25px;
-    gap: 5px;
+    gap: 25px;
 }
 
-.social-link {
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    text-decoration: none;
+
+.social-link{
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-link:hover{
+    transform: scale(115%);
 }
 
 .social-icon {
@@ -61,12 +90,19 @@
     gap: 25px;
 }
 
+
 .icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.tech-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
 }
 
 .icon {
@@ -80,12 +116,11 @@
     margin-bottom: 20px;
     background: var(--welcome-background);
     border: 2px solid var(--card-border);
+    transition: 0.2s;
 }
 
-
-.footer-link:hover {
-    transform: scale(1.2);
-    color: var(--text-hover);
+.experience-card:hover{
+    box-shadow: 0px 10px 15px -3px var(--box-shadow);
 }
 
 .experience-card-title {
@@ -111,11 +146,6 @@
     align-items: center;
 }
 
-.footer-link {
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: 0.2s;
-}
 
 .tech-used>.icon {
     width: 30px;
@@ -141,6 +171,18 @@
     }
 
     .container {
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width: 1634px){
+    .container {
         justify-content: center;
     }
+}
+
+@media (prefers-reduced-motion) {
+    .img-me{
+        border-radius: 0;
+    }    
 }
