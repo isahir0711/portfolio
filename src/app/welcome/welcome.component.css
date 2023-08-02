@@ -12,6 +12,7 @@
     gap: 25px;
 }
 
+
 .content{
     max-width: 800px;
 }
@@ -173,6 +174,7 @@
     .container {
         flex-wrap: wrap;
     } 
+
 }
 
 @media (max-width: 1634px){

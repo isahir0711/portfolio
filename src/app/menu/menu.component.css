@@ -185,7 +185,7 @@ a {
   .navlinks {
     height: 0;
     position: absolute;
-    top: 50px;
+    top: 49.5px;
     transition: 0.2s;
     width: 100vw;
     background: var(--welcome-background);
@@ -195,12 +195,11 @@ a {
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     opacity: 0;
     padding: 0;
     transition: 0.2s;
-    font-size: 2rem;
-    margin-left: 20px;
+    gap: 15px;
   }
 
   .link{
@@ -219,5 +218,9 @@ a {
 
   .backdrop{
     display: none;
+  }
+  
+  .link>a{
+    font-size: 2rem;
   }
 }
