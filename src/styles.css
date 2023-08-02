@@ -20,7 +20,8 @@ html{
     --welcome-fontcolor:#444343;
     --button-background:#ffffff;
     --card-border:#c5c3c3;
-    --text-hover:#444343;
+    --text-hover:#c7c7c7;
+    --backdrop-color:#d6d9dd;
     --box-shadow:rgba(0,0,0,0.1);
     /* Valores predeterminados para el tema claro */
 }
@@ -33,7 +34,8 @@ html{
     --welcome-fontcolor:#c5c3c3;
     --button-background:#111827;
     --card-border:#444343;
-    --text-hover:#c5c3c3;
+    --text-hover:#838383;
+    --backdrop-color:#0b182b;
     --box-shadow:rgba(0, 0, 0, 1);
     /* Variables personalizadas para el tema oscuro */
 }

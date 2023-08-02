@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.overlayRender();
     this.applyTheme();
     // Detectar cambios en el esquema de color preferido del dispositivo
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', this.onPreferredColorSchemeChange.bind(this));
@@ -48,6 +49,25 @@ export class MenuComponent implements OnInit {
     if(nav !== null){
       nav.classList.toggle("active")
     }
+  }
+
+  overlayRender(): void{
+    const backdrop = document.querySelector('.backdrop');
+    const nav_links = document.querySelectorAll('.link a');
+
+    nav_links.forEach((list_item)=>{
+      list_item.addEventListener('mouseover',() =>{
+        backdrop?.classList.add('show');
+        let position = list_item.getBoundingClientRect();
+        (backdrop as HTMLElement).style.left = position.x  + 'px';
+        (backdrop as HTMLElement).style.top = position.y  + 'px';
+        (backdrop as HTMLElement).style.height = position.height  + 'px';
+        (backdrop as HTMLElement).style.width = position.width  + 'px';
+      });
+      list_item.addEventListener('mouseleave',() =>{
+        backdrop?.classList.remove('show');
+      })
+    });
   }
   
   closeMenu(): void{

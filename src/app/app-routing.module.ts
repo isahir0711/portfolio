@@ -6,8 +6,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   {path:'',component:WelcomeComponent},
-  {path:'skills',component:ProjectsComponent},
-  {path:'aboutme',component:AboutmeComponent},
+  {path:'projects',component:ProjectsComponent,data:{animation: 'isRight'}},
+  {path:'aboutme',component:AboutmeComponent,data:{animation: 'isRight'}},
 
   {path:'**',redirectTo:''},
 ];

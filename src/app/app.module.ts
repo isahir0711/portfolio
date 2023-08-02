@@ -8,6 +8,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

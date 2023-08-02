@@ -21,10 +21,28 @@
   list-style: none;
 }
 
-.link {
-  margin-right: 15px;
+.backdrop{
+  position: absolute;
+  background: var(--backdrop-color);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s ease left,width,opacity;
 }
 
+.backdrop.show{
+  opacity: 1;
+}
+
+.link{
+  height: auto;
+}
+
+.link>a{
+  padding: 10px 15px;
+  font-size: 1.3rem;
+}
 
 .menu {
   display: none;
@@ -197,5 +215,9 @@ a {
 
   .navlinks.active>.links {
     opacity: 1;
+  }
+
+  .backdrop{
+    display: none;
   }
 }
