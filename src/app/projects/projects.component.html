@@ -1,3 +1,20 @@
 <div class="content-projects">
-    <p>Working on it!!!</p>
+    <h1>Projects</h1>
+    <div class="projects">
+        <ng-container *ngFor="let project of projects">
+            <a href="https://weather-app-isahir0711.vercel.app" target="_blank" class="project-card">
+                <img class="background-img" src="/assets/imgs/ss/{{project.img}}.png" alt="">
+                <div class="content-card">
+                    <h2>{{project.title}}</h2>
+                    <p>{{project.description}}</p>
+                    <div class="tech-used">
+                        <ng-container class="tech-used" *ngFor="let tech of project.tech_imgs">
+                            <img src="/assets/icons/{{tech}}.svg" alt="{{tech}}" class="tech-icon">
+                        </ng-container>
+                    </div>
+                </div>
+            </a>
+        </ng-container>
+    </div>
+
 </div>
