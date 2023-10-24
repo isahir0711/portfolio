@@ -12,7 +12,15 @@ export class ProjectsComponent implements OnInit{
       title: 'Weather App',
       description: 'weather app with forecast info',
       tech_imgs: ['angular-icon','ts-icon', 'html-icon', 'css-icon'],
-      img: 'weather-app-ss'
+      img: 'weather-app-ss',
+      url:'https://weather-app-isahir0711.vercel.app'
+    },
+    {
+      title: 'SpotiSurprise',
+      description: 'share songs with ♥',
+      tech_imgs: ['angular-icon','ts-icon','net-icon','c4-icon','msql-icon'],
+      img: 'spotisurprise-ss',
+      url:'https://spotisurprise.vercel.app'
     }
   ];
   

@@ -2,7 +2,7 @@
     <h1>Projects</h1>
     <div class="projects">
         <ng-container *ngFor="let project of projects">
-            <a href="https://weather-app-isahir0711.vercel.app" target="_blank" class="project-card">
+            <a href="{{project.url}}" target="_blank" class="project-card">
                 <img class="background-img" src="/assets/imgs/ss/{{project.img}}.png" alt="">
                 <div class="content-card">
                     <h2>{{project.title}}</h2>
